@@ -1,0 +1,6 @@
+framework module AmpliffyCTV {
+  umbrella header "AmpliffyCTV-umbrella.h"
+
+  export *
+  module * { export * }
+}

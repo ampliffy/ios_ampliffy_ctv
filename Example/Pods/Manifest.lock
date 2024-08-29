@@ -1,0 +1,16 @@
+PODS:
+  - AmpliffyCTV (0.1.0)
+
+DEPENDENCIES:
+  - AmpliffyCTV (from `../`)
+
+EXTERNAL SOURCES:
+  AmpliffyCTV:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AmpliffyCTV: e512e8255ef2e8f48b79d5862543538de7b8c92c
+
+PODFILE CHECKSUM: 074ad42233b91216f790ad019cd7744fbebc4c5d
+
+COCOAPODS: 1.15.2
