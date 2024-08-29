@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'AmpliffyCTV_Example' do
+  pod 'AmpliffyCTV', :path => '../'
+
+  target 'AmpliffyCTV_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
