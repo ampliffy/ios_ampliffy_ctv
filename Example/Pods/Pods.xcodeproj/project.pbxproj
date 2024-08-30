@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,7 @@
 		34009337A61C1CB763F51FD9B0B1E3AE /* Pods-AmpliffyCTV_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 874C5F178F0B52383D4A0736C4AA7AFB /* Pods-AmpliffyCTV_Example-dummy.m */; };
 		392AD0239E2043407FF49427B89FB379 /* Pods-AmpliffyCTV_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B51A40EF105F2D9E807D450ED754372D /* Pods-AmpliffyCTV_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47A3A57A20909B6D6A994B73B69430BB /* AmpliffyCTV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A859AF7E66B0A5FB94E5D813B014E45F /* AmpliffyCTV-dummy.m */; };
-		77C6EF186447D29430643F32B5E33C14 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37050D17F6C9E572ADDF2D044D44FAE /* ReplaceMe.swift */; };
+		77C6EF186447D29430643F32B5E33C14 /* AmpliffyCTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37050D17F6C9E572ADDF2D044D44FAE /* AmpliffyCTV.swift */; };
 		A46A83E2DDDD2A97A58669931FC59844 /* Pods-AmpliffyCTV_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F95C683DE36D2F31093C45D90DE7866E /* Pods-AmpliffyCTV_Tests-dummy.m */; };
 		AC56A7F28425626091AFC7A2CF7B7B0C /* Pods-AmpliffyCTV_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E58816B1E3307C160017BF627916709F /* Pods-AmpliffyCTV_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBAEF6045E28A0B332364E7BE5F8081D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -41,9 +41,9 @@
 		09F398F96EC6BDC034819C397E6260C3 /* Pods-AmpliffyCTV_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AmpliffyCTV_Example-Info.plist"; sourceTree = "<group>"; };
 		0FCCC3351FAEBC4580E968B800FB8594 /* AmpliffyCTV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AmpliffyCTV.modulemap; sourceTree = "<group>"; };
 		1EDE85A0EFA08CFFA4306573E454E54E /* Pods-AmpliffyCTV_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AmpliffyCTV_Example.modulemap"; sourceTree = "<group>"; };
-		20092844B268006AD823F5BA61DCC77E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		20092844B268006AD823F5BA61DCC77E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2DB174A9040DF117B14EF3D44C20DABF /* AmpliffyCTV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AmpliffyCTV-umbrella.h"; sourceTree = "<group>"; };
-		3D7FF506CD246484A4B67B72F97096AC /* Pods-AmpliffyCTV_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AmpliffyCTV_Example"; path = Pods_AmpliffyCTV_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D7FF506CD246484A4B67B72F97096AC /* Pods_AmpliffyCTV_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmpliffyCTV_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F63836C91DB7F445A5987CD4A32BB1B /* Pods-AmpliffyCTV_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AmpliffyCTV_Tests-Info.plist"; sourceTree = "<group>"; };
 		5B0B48A040A11FB9235814127E9CB855 /* AmpliffyCTV-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AmpliffyCTV-prefix.pch"; sourceTree = "<group>"; };
 		5F36CFB3A332A5BD6930220A13659943 /* Pods-AmpliffyCTV_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AmpliffyCTV_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -56,20 +56,20 @@
 		874C5F178F0B52383D4A0736C4AA7AFB /* Pods-AmpliffyCTV_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AmpliffyCTV_Example-dummy.m"; sourceTree = "<group>"; };
 		8BADF3379787979BFC3BD167300A186D /* AmpliffyCTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AmpliffyCTV.debug.xcconfig; sourceTree = "<group>"; };
 		8C739F7E64F0038C327FBE91C23CBA8D /* Pods-AmpliffyCTV_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AmpliffyCTV_Example.release.xcconfig"; sourceTree = "<group>"; };
-		941F87DD378EFF42D29BAF95900A64F3 /* AmpliffyCTV.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AmpliffyCTV.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		941F87DD378EFF42D29BAF95900A64F3 /* AmpliffyCTV.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AmpliffyCTV.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A859AF7E66B0A5FB94E5D813B014E45F /* AmpliffyCTV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AmpliffyCTV-dummy.m"; sourceTree = "<group>"; };
 		B399873E48BA01E04C06ED4F9A5F0F16 /* AmpliffyCTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AmpliffyCTV.release.xcconfig; sourceTree = "<group>"; };
 		B51A40EF105F2D9E807D450ED754372D /* Pods-AmpliffyCTV_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AmpliffyCTV_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B5D8B5B680965877CB853814535D6D2F /* Pods-AmpliffyCTV_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AmpliffyCTV_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BB7F84611B1DE08368F8E6A51B55ECC9 /* Pods-AmpliffyCTV_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AmpliffyCTV_Tests"; path = Pods_AmpliffyCTV_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA7CEC815A9440DFD05F2E61EE3CCFAE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BB7F84611B1DE08368F8E6A51B55ECC9 /* Pods_AmpliffyCTV_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmpliffyCTV_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA7CEC815A9440DFD05F2E61EE3CCFAE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D8E7E40228DC8A9959D6EF1621CB2D2C /* Pods-AmpliffyCTV_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AmpliffyCTV_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E58816B1E3307C160017BF627916709F /* Pods-AmpliffyCTV_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AmpliffyCTV_Example-umbrella.h"; sourceTree = "<group>"; };
 		F3689BEE87B2E9DA8FEFA82F6CCF26AC /* Pods-AmpliffyCTV_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AmpliffyCTV_Tests.modulemap"; sourceTree = "<group>"; };
-		F37050D17F6C9E572ADDF2D044D44FAE /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = AmpliffyCTV/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		F37050D17F6C9E572ADDF2D044D44FAE /* AmpliffyCTV.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AmpliffyCTV.swift; sourceTree = "<group>"; };
 		F95C683DE36D2F31093C45D90DE7866E /* Pods-AmpliffyCTV_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AmpliffyCTV_Tests-dummy.m"; sourceTree = "<group>"; };
-		FED842711496582E01FCE89198A7C172 /* AmpliffyCTV */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AmpliffyCTV; path = AmpliffyCTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED842711496582E01FCE89198A7C172 /* AmpliffyCTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmpliffyCTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,9 +120,9 @@
 		093E45E017723B598E983BB8C78B9AF4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FED842711496582E01FCE89198A7C172 /* AmpliffyCTV */,
-				3D7FF506CD246484A4B67B72F97096AC /* Pods-AmpliffyCTV_Example */,
-				BB7F84611B1DE08368F8E6A51B55ECC9 /* Pods-AmpliffyCTV_Tests */,
+				FED842711496582E01FCE89198A7C172 /* AmpliffyCTV.framework */,
+				3D7FF506CD246484A4B67B72F97096AC /* Pods_AmpliffyCTV_Example.framework */,
+				BB7F84611B1DE08368F8E6A51B55ECC9 /* Pods_AmpliffyCTV_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +134,14 @@
 				D0D32BF6EA4FD4EF178EC17BC47BB367 /* Pods-AmpliffyCTV_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		364E5E0B2C818FE5004FDBD6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F37050D17F6C9E572ADDF2D044D44FAE /* AmpliffyCTV.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -172,7 +180,7 @@
 		9A0F71B96BAC00699EAEAA0DA58D0B92 /* AmpliffyCTV */ = {
 			isa = PBXGroup;
 			children = (
-				F37050D17F6C9E572ADDF2D044D44FAE /* ReplaceMe.swift */,
+				364E5E0B2C818FE5004FDBD6 /* Classes */,
 				865B034FD1A4E9A4113B0E607E65D73C /* Pod */,
 				5DFC9AE31A6A2ACA5D06F2586455650A /* Support Files */,
 			);
@@ -268,7 +276,7 @@
 			);
 			name = AmpliffyCTV;
 			productName = AmpliffyCTV;
-			productReference = FED842711496582E01FCE89198A7C172 /* AmpliffyCTV */;
+			productReference = FED842711496582E01FCE89198A7C172 /* AmpliffyCTV.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AE394233B56002B8527653BA617BDF16 /* Pods-AmpliffyCTV_Example */ = {
@@ -287,7 +295,7 @@
 			);
 			name = "Pods-AmpliffyCTV_Example";
 			productName = Pods_AmpliffyCTV_Example;
-			productReference = 3D7FF506CD246484A4B67B72F97096AC /* Pods-AmpliffyCTV_Example */;
+			productReference = 3D7FF506CD246484A4B67B72F97096AC /* Pods_AmpliffyCTV_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C80713183E01A70AA28C77A5E411168E /* Pods-AmpliffyCTV_Tests */ = {
@@ -306,7 +314,7 @@
 			);
 			name = "Pods-AmpliffyCTV_Tests";
 			productName = Pods_AmpliffyCTV_Tests;
-			productReference = BB7F84611B1DE08368F8E6A51B55ECC9 /* Pods-AmpliffyCTV_Tests */;
+			productReference = BB7F84611B1DE08368F8E6A51B55ECC9 /* Pods_AmpliffyCTV_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -315,11 +323,17 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					6443647AEFA0EBAAD656F871C0696C26 = {
+						LastSwiftMigration = 1540;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -368,7 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47A3A57A20909B6D6A994B73B69430BB /* AmpliffyCTV-dummy.m in Sources */,
-				77C6EF186447D29430643F32B5E33C14 /* ReplaceMe.swift in Sources */,
+				77C6EF186447D29430643F32B5E33C14 /* AmpliffyCTV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,20 +426,24 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-AmpliffyCTV_Example/Pods-AmpliffyCTV_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AmpliffyCTV_Example/Pods-AmpliffyCTV_Example.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -433,6 +451,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -445,26 +467,34 @@
 			baseConfigurationReference = 8BADF3379787979BFC3BD167300A186D /* AmpliffyCTV.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/AmpliffyCTV/AmpliffyCTV-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AmpliffyCTV/AmpliffyCTV-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/AmpliffyCTV/AmpliffyCTV.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = AmpliffyCTV;
 				PRODUCT_NAME = AmpliffyCTV;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -476,26 +506,34 @@
 			baseConfigurationReference = B399873E48BA01E04C06ED4F9A5F0F16 /* AmpliffyCTV.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/AmpliffyCTV/AmpliffyCTV-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AmpliffyCTV/AmpliffyCTV-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/AmpliffyCTV/AmpliffyCTV.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_MODULE_NAME = AmpliffyCTV;
 				PRODUCT_NAME = AmpliffyCTV;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -509,20 +547,24 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-AmpliffyCTV_Tests/Pods-AmpliffyCTV_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AmpliffyCTV_Tests/Pods-AmpliffyCTV_Tests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -530,6 +572,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -571,9 +617,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -586,11 +634,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -604,20 +651,24 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-AmpliffyCTV_Example/Pods-AmpliffyCTV_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AmpliffyCTV_Example/Pods-AmpliffyCTV_Example.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -625,6 +676,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -666,9 +721,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -684,12 +741,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -703,20 +759,24 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-AmpliffyCTV_Tests/Pods-AmpliffyCTV_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AmpliffyCTV_Tests/Pods-AmpliffyCTV_Tests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -724,6 +784,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";

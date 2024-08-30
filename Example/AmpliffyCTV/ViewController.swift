@@ -7,14 +7,28 @@
 //
 
 import UIKit
+import AmpliffyCTV
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let ampliffyCTVLabel = AmpliffyCTVLabel(frame: CGRectMake(view.frame.size.width / 4,
+                                                                  view.frame.size.height / 2 ,
+                                                                  view.frame.size.width, 
+                                                                  30))
+        
+        // Setup the BlinkingLabel
+        ampliffyCTVLabel.text = "ampliffyCTVLabel POD!"
+        ampliffyCTVLabel.font = UIFont.systemFont(ofSize: 20)
+        
+        view.addSubview(ampliffyCTVLabel)
+        
+        ampliffyCTVLabel.startBlinking()
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
